@@ -1,0 +1,15 @@
+{
+  "id": "YRD.OriginationAndRisk.SuccessRate",
+  "type": "BarChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": [
+    "Success Rate"
+  ],
+  "#query": {
+    "type": "select_column",
+    "column": "success_rate",
+    "table": "YRD.origination_risk",
+    "raise_dimension": 1
+  }
+}

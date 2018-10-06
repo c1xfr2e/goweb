@@ -1,0 +1,34 @@
+{
+    "id": "YRD.LoanFacilitation.TotalLoansFacilitated",
+    "title": "Total Loans Facilitated (RMB)",
+    "dateView": 15,
+    "dataView": [
+        {
+            "type": "chartView",
+            "figures": [
+                {
+                    "type": "figureBox",
+                    "figures": [
+                        {
+                            "type": "AreaChart",
+                            "id": "YRD.LoanFacilitation.TotalLoansFacilitated"
+                        },
+                        {
+                            "type": "kvCard",
+                            "id": "YRD.LoanFacilitation.TotalLoansFacilitated.KV"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "tableView",
+            "figures": [
+                {
+                    "type": "table",
+                    "id": "YRD.LoanFacilitation.TotalLoansFacilitated.Table"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "HTHT.HotelsAndRooms.NumberOfDecreasedHotels.KV",
+  "template": true,
+  "type": "kvCard",
+  "cards": [
+    {
+      "title": "Average",
+      "content": "{{.A.data | printNumber}}",
+      "type": 0
+    },
+    {
+      "title": "Quarter-on-Quarter",
+      "content": "{{.B.change}}%",
+      "type": "{{.B.inc_or_dec}}"
+    },
+    {
+      "title": "Year-on-Year",
+      "content": "{{.C.change}}%",
+      "type": "{{.C.inc_or_dec}}"
+    }
+  ],
+  "#query": {
+    "A": {
+      "type": "element",
+      "table": "HTHT.hotel",
+      "period": "month",
+      "function": "avg(decrease_count)"
+    },
+    "B": {
+      "type": "xox",
+      "period": "quarter",
+      "table": "HTHT.hotel",
+      "function": "decrease_count"
+    },
+    "C": {
+      "type": "xox",
+      "period": "year",
+      "table": "HTHT.hotel",
+      "function": "decrease_count"
+    }
+  }
+}

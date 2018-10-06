@@ -1,0 +1,14 @@
+{
+  "type": "BarChart",
+  "id": "YRD.LoanFacilitation.LoanSizeDistribution",
+  "legend": "#query.group_values",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "#query": {
+    "type": "aggregate",
+    "table": "YRD.borrow_amount_distribution",
+    "group_key": "item",
+    "function": "sum(value)",
+    "period": "date"
+  }
+}

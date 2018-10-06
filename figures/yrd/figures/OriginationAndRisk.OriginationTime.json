@@ -1,0 +1,11 @@
+{
+  "type": "BoxPlot",
+  "id": "YRD.OriginationAndRisk.OriginationTime",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "#query": {
+    "type": "period_series",
+    "table": "YRD.origination_risk_project",
+    "column": "duration"
+  }
+}

@@ -1,0 +1,33 @@
+{
+	"id": "YRD.LoanFacilitation.AverageLoanSize",
+	"title":"Average Loan Size (RMB)",
+	"dateView":15,
+	"dataView":[
+		{
+			"type":"chartView",
+			"figures":[
+				{
+					"type":"figureBox",
+					"figures":[
+						{
+							"type":"LineChart",
+							"id":"YRD.LoanFacilitation.AverageLoanSize"
+						},
+						{
+							"type":"kvCard",
+							"id":"YRD.LoanFacilitation.AverageLoanSize.KV"
+						}
+					]
+				}
+			]
+		},{
+			"type":"tableView",
+			"figures":[
+				{
+					"type":"table",
+					"id":"YRD.LoanFacilitation.AverageLoanSize.Table"
+				}
+			]
+		}
+	]
+}

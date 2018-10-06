@@ -1,0 +1,13 @@
+{
+  "id": "HTHT.OperationalIndicators.OccupancyRate",
+  "type": "LineChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": ["OccupancyRate"],
+  "#query": {
+    "type": "select_column",
+    "column": "occ",
+    "table": "HTHT.hotel_management_state",
+    "raise_dimension": 1
+  }
+}

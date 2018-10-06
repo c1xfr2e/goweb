@@ -1,0 +1,21 @@
+{
+    "id": "YRD.InvestorProfile.InvestmentAmountDistribution",
+    "title":"Number of Investors by Investment Size",
+    "dateView":15,
+    "dataView":[
+        {
+            "type":"chartView",
+            "figures":[
+                {
+                    "type":"figureBox",
+                    "figures":[
+                        {
+                            "type":"BarChart",
+                            "id":"YRD.InvestorProfile.InvestmentAmountDistribution"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

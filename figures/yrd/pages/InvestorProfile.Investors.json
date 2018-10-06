@@ -1,0 +1,25 @@
+{
+    "id": "YRD.InvestorProfile.Investors",
+    "title":"Investors",
+    "dateView":15,
+    "dataView":[
+        {
+            "type":"chartView",
+            "figures":[
+                {
+                    "type":"figureBox",
+                    "figures":[
+                        {
+                            "type":"BarChart",
+                            "id":"YRD.InvestorProfile.Investors"
+                        },
+                        {
+                            "type":"kvCard",
+                            "id":"YRD.InvestorProfile.Investors.KV"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

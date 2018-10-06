@@ -1,0 +1,34 @@
+{
+	"id": "YRD.TotalLoansOutstanding.TotalLoansOutstanding",
+	"title":"Total Loans Outstanding",
+	"dateView":15,
+	"dataView":[
+		{
+			"type":"chartView",
+			"figures":[
+				{
+					"type":"figureBox",
+					"figures":[
+						{
+							"type":"areaChart",
+							"id":"YRD.LoansOutstanding.TotalLoansOutstanding"
+						},
+						{
+							"type":"kvCard",
+							"id":"YRD.LoansOutstanding.TotalLoansOutstanding.KV"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type":"tableView",
+			"figures":[
+				{
+					"type":"table",
+					"id":"YRD.LoansOutstanding.TotalLoansOutstanding.Table"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+    "dataView": [
+        {
+            "figures": [
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.CustomerReviews.UserRating",
+                            "type": "LineChart"
+                        },
+                        {
+                            "id": "HTHT.CustomerReviews.UserRating.KV",
+                            "type": "kvCard"
+                        }
+                    ],
+                    "title": "User Rating",
+                    "type": "figureGroup"
+                },
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.CustomerReviews.NumberOfReviews",
+                            "type": "LineChart"
+                        },
+                        {
+                            "id": "HTHT.CustomerReviews.NumberOfReviews.KV",
+                            "type": "kvCard"
+                        }
+                    ],
+                    "title": "Number of Reviews",
+                    "type": "figureGroup"
+                }
+            ],
+            "type": "chartView"
+        },
+        {
+            "figures": [
+                {
+                    "id": "HTHT.CustomerReviews.UserRatingAndNumberOfReviews.Table",
+                    "type": "table"
+                }
+            ],
+            "type": "tableView"
+        }
+    ],
+    "dateView": 7,
+    "id": "HTHT.CustomerReviews.UserRatingAndNumberOfReviews",
+    "table": "HTHT.member",
+    "title": "User Rating, Number of Reviews"
+}

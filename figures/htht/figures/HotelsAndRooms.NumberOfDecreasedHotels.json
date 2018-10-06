@@ -1,0 +1,14 @@
+{
+  "id": "HTHT.HotelsAndRooms.NumberOfDecreasedHotels",
+  "type": "LineChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": ["Number Of Decreased Hotels"],
+  "#query": {
+    "type": "select_column",
+    "column": "decrease_count",
+    "period": "month",
+    "table": "HTHT.hotel",
+    "raise_dimension": 1
+  }
+}

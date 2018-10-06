@@ -1,0 +1,13 @@
+{
+  "id": "HTHT.OperationalIndicators.RevPAR",
+  "type": "LineChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": ["RevPar"],
+  "#query": {
+    "type": "select_column",
+    "column": "rev_par",
+    "table": "HTHT.hotel_management_state",
+    "raise_dimension": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "HTHT.LoyaltyClub.MembershipTypeDistribution",
+  "type": "BarChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": "#query.group_values",
+  "#query": {
+    "type": "aggregate",
+    "table": "HTHT.member_distribution",
+    "group_key": "item",
+    "function": "sum(value)",
+    "period": "date"
+  }
+}

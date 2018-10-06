@@ -1,0 +1,33 @@
+{
+    "id": "HTHT.HotelsAndRooms.ChangeInNumberOfHotels.Ladder",
+    "type": "LadderChart.Abs",
+
+    "xAxis": "#query.base.date_range",
+    "startPos": "#query.base.data",
+
+    "yAxis": [
+        "#query.increase.data",
+        "#query.decrease.data"
+    ],
+
+    "#query": {
+        "base": {
+            "type": "select_column",
+            "column": "count+increase_count+decrease_count",
+            "period": "month",
+            "table": "HTHT.hotel"
+        },
+        "increase": {
+            "type": "select_column",
+            "column": "increase_count",
+            "period": "month",
+            "table": "HTHT.hotel"
+        },
+        "decrease": {
+            "type": "select_column",
+            "column": "decrease_count",
+            "period": "month",
+            "table": "HTHT.hotel"
+        }
+    }
+}

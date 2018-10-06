@@ -1,0 +1,11 @@
+{
+  "id": "HTHT.HotelsAndRooms.NumberOfRoomsPerHotel",
+  "type": "AreaChart",
+  "data": "#query.data",
+  "#query": {
+    "type": "select_column",
+    "period": "month",
+    "column": "count",
+    "table": "HTHT.hotel_room"
+  }
+}

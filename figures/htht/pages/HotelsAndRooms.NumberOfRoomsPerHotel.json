@@ -1,0 +1,31 @@
+{
+    "dataView": [
+        {
+            "figures": [
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.HotelsAndRooms.NumberOfRoomsPerHotel",
+                            "type": "BarChart"
+                        }
+                    ],
+                    "type": "figureBox"
+                }
+            ],
+            "type": "chartView"
+        },
+        {
+            "figures": [
+                {
+                    "id": "HTHT.HotelsAndRooms.NumberOfRoomsPerHotel.Table",
+                    "type": "table"
+                }
+            ],
+            "type": "tableView"
+        }
+    ],
+    "dateView": 6,
+    "id": "HTHT.HotelsAndRooms.NumberOfRoomsPerHotel",
+    "table": "HTHT.hotel_room",
+    "title": "Amount of Room"
+}

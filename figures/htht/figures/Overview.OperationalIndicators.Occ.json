@@ -1,0 +1,50 @@
+{
+  "id": "HTHT.Overview.OperationalIndicators.OccupancyRate",
+  "type": "OverviewCard",
+  "title": "Occupancy Rate",
+  "mainView": {
+    "currency": "",
+    "unit": "",
+    "content": "#query.1.data"
+  },
+  "figureView": {
+    "type": "#query.2.inc_or_dec",
+    "data": "#query.0.data"
+  },
+  "diffView": {
+    "0": {
+      "name": "#query.2.name",
+      "type": "#query.2.inc_or_dec",
+      "amount": "#query.2.change"
+    },
+    "1": {
+      "name": "#query.3.name",
+      "type": "#query.3.inc_or_dec",
+      "amount": "#query.3.change"
+    }
+  },
+  "#query": {
+    "0": {
+      "type": "select_column",
+      "column": "occ",
+      "table": "HTHT.hotel_management_state"
+    },
+    "1": {
+      "type": "element",
+      "table": "HTHT.hotel_management_state",
+      "function": "occ",
+      "one": true
+    },
+    "2": {
+      "type": "xox",
+      "table": "HTHT.hotel_management_state",
+      "function": "occ"
+    },
+    "3": {
+      "type": "xox",
+      "table": "HTHT.hotel_management_state",
+      "function": "occ",
+      "periodLevel": 1
+    }
+  }
+}

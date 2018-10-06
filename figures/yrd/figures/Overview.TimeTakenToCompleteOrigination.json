@@ -1,0 +1,50 @@
+{
+  "type": "OverviewCard",
+  "id": "YRD.Overview.TimeTakenToCompleteOrigination",
+  "title": "Time Taken To Complete Origination",
+  "mainView": {
+    "currency": "",
+    "unit": "",
+    "content": "#query.1.data"
+  },
+  "figureView": {
+    "type": "#query.2.inc_or_dec",
+    "data": "#query.0.data"
+  },
+  "diffView": {
+    "0": {
+      "name": "#query.2.name",
+      "type": "#query.2.inc_or_dec",
+      "amount": "#query.2.change"
+    },
+    "1": {
+      "name": "#query.3.name",
+      "type": "#query.3.inc_or_dec",
+      "amount": "#query.3.change"
+    }
+  },
+  "#query": {
+    "0": {
+      "type": "select_column",
+      "column": "duration",
+      "table": "YRD.origination_risk"
+    },
+    "1": {
+      "type": "element",
+      "table": "YRD.origination_risk",
+      "function": "sum(duration)",
+      "one": true
+    },
+    "2": {
+      "type": "xox",
+      "table": "YRD.origination_risk",
+      "function": "sum(duration)"
+    },
+    "3": {
+      "type": "xox",
+      "table": "YRD.origination_risk",
+      "function": "sum(duration)",
+      "periodLevel": 1
+    }
+  }
+}

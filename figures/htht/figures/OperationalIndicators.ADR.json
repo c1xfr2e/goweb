@@ -1,0 +1,13 @@
+{
+  "id": "HTHT.OperationalIndicators.AverageDailyRate",
+  "type": "LineChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": ["AverageDailyRate"],
+  "#query": {
+    "type": "select_column",
+    "column": "adr",
+    "table": "HTHT.hotel_management_state",
+    "raise_dimension": 1
+  }
+}

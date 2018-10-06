@@ -1,0 +1,12 @@
+{
+  "id": "HTHT.HotelsAndRooms.NumberOfHotels",
+  "type": "AreaChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "#query": {
+    "type": "select_column",
+    "column": "count",
+    "period": "month",
+    "table": "HTHT.hotel"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "LineChart",
+  "id": "YRD.BorrowerProfile.PersonasOfBorrowers.NumberOfBorrowersServed",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": [
+    "Number of Borrowers Served"
+  ],
+  "#query": {
+    "type": "select_column",
+    "column": "borrower_num",
+    "table": "YRD.loans",
+    "raise_dimension": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+	"id": "YRD.OriginationAndRisk.SuccessRate",
+	"title":"Success Rate",
+	"dateView":15,
+	"dataView":[
+		{
+			"type":"chartView",
+			"figures":[
+				{
+					"type":"figureBox",
+					"figures":[
+						{
+							"type":"BarChart",
+							"id":"YRD.OriginationAndRisk.SuccessRate"
+						}
+					]
+				}
+			]
+		},{
+			"type":"tableView",
+			"figures":[
+				{
+					"type":"table",
+					"id":"YRD.OriginationAndRisk.SuccessRate.Table"
+				}
+			]
+		}
+	]
+}

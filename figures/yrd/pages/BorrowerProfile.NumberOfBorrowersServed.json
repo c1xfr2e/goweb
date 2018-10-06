@@ -1,0 +1,25 @@
+{
+    "id": "YRD.BorrowerProfile.NumberOfBorrowersServed",
+    "title":"Number of Borrowers Served",
+    "dateView":15,
+    "dataView":[
+        {
+            "type":"chartView",
+            "figures":[
+                {
+                    "type":"figureBox",
+                    "figures":[
+                        {
+                            "type":"LineChart",
+                            "id":"YRD.BorrowerProfile.PersonasOfBorrowers.NumberOfBorrowersServed"
+                        },
+                        {
+                            "type":"kvCard",
+                            "id":"YRD.BorrowerProfile.PersonasOfBorrowers.NumberOfBorrowersServed.KV"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

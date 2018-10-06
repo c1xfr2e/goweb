@@ -1,0 +1,41 @@
+{
+  "id": "HTHT.OperationalIndicators.OccupancyRate.KV",
+  "template": true,
+  "type": "kvCard",
+  "cards": [
+    {
+      "title": "Average",
+      "content": "{{.A.data | printNumber}}",
+      "type": 0
+    },
+    {
+      "title": "Month-on-Month",
+      "content": "{{.B.change}}%",
+      "type": "{{.B.inc_or_dec}}"
+    },
+    {
+      "title": "Quarter-on-Quarter",
+      "content": "{{.C.change}}%",
+      "type": "{{.C.inc_or_dec}}"
+    }
+  ],
+  "#query": {
+    "A": {
+      "type": "element",
+      "table": "HTHT.hotel_management_state",
+      "function": "avg(occ)"
+    },
+    "B": {
+      "type": "xox",
+      "period": "month",
+      "table": "HTHT.hotel_management_state",
+      "function": "sum(occ)"
+    },
+    "C": {
+      "type": "xox",
+      "period": "quarter",
+      "table": "HTHT.hotel_management_state",
+      "function": "sum(occ)"
+    }
+  }
+}

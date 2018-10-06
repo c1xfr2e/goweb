@@ -1,0 +1,30 @@
+{
+	"id": "YRD.OriginationAndRisk.OriginationTime",
+	"title":"Origination Time",
+	"dateView":15,
+	"dataView":[
+		{
+			"type":"chartView",
+			"figures":[
+				{
+					"type":"figureBox",
+					"figures":[
+						{
+							"type":"BoxPlot",
+							"id":"YRD.OriginationAndRisk.OriginationTime"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type":"tableView",
+			"figures":[
+				{
+					"type":"table",
+					"id":"YRD.OriginationAndRisk.OriginationTime.Table"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "HTHT.CustomerReviews.NumberOfReviews",
+  "type": "LineChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": ["Number of Reviews"],
+  "#query": {
+    "type": "select_column",
+    "column": "comment_num",
+    "table": "HTHT.member",
+    "raise_dimension": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "id": "YRD.InvestorProfile.InvestedByEachInvestor",
+    "title":"Average Investment per Investor (RMB)",
+    "dateView":15,
+    "dataView":[
+        {
+            "type":"chartView",
+            "figures":[
+                {
+                    "type":"figureBox",
+                    "figures":[
+                        {
+                            "type":"BarChart",
+                            "id":"YRD.InvestorProfile.InvestedByEachInvestor"
+                        },
+                        {
+                            "type":"kvCard",
+                            "id":"YRD.InvestorProfile.InvestedByEachInvestor.KV"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

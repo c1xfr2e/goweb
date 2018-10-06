@@ -1,0 +1,15 @@
+{
+  "type": "BarChart",
+  "id": "YRD.InvestorProfile.InvestedByEachInvestor",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": [
+    "Invested By Each Investor"
+  ],
+  "#query": {
+    "type": "select_column",
+    "column": "avg_invest_amount",
+    "table": "YRD.investment",
+    "raise_dimension": 1
+  }
+}

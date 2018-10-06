@@ -1,0 +1,41 @@
+{
+  "id": "HTHT.HotelsAndRooms.NumberOfRoomsPerHotel.KV",
+  "template": true,
+  "type": "kvCard",
+  "cards": [
+    {
+      "title": "Average",
+      "content": "{{.A.data | printNumber}}",
+      "type": 0
+    },
+    {
+      "title": "Quarter-on-Quarter",
+      "content": "{{.B.change}}%",
+      "type": "{{.B.inc_or_dec}}"
+    },
+    {
+      "title": "Year-on-Year",
+      "content": "{{.C.change}}%",
+      "type": "{{.C.inc_or_dec}}"
+    }
+  ],
+  "#query": {
+    "A": {
+      "type": "element",
+      "table": "HTHT.hotel_room",
+      "function": "avg(count)"
+    },
+    "B": {
+      "type": "xox",
+      "period": "quater",
+      "table": "HTHT.hotel_room",
+      "function": "sum(count)"
+    },
+    "C": {
+      "type": "xox",
+      "period": "year",
+      "table": "HTHT.hotel_room",
+      "function": "sum(count)"
+    }
+  }
+}

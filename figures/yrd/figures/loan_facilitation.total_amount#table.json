@@ -1,0 +1,11 @@
+{
+    "id": "YRD.LoanFacilitation.TotalLoansFacilitated.Table",
+    "type": "table",
+    "data": {
+        "columns": [],
+        "currentPage": 0,
+        "total": 0
+    },
+    "table": "YRD.loans",
+    "columns": ["date", "total_borrow_amount"]
+}

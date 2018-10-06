@@ -1,0 +1,30 @@
+{
+    "id": "YRD.LoanTerms.Term",
+    "title":"Number of Loans by Term (Months)",
+    "dateView":15,
+    "dataView":[
+        {
+            "type":"chartView",
+            "figures":[
+                {
+                    "type":"figureBox",
+                    "figures":[
+                        {
+                            "type":"BarChart",
+                            "id":"YRD.LoanTerms.Term"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type":"tableView",
+            "figures":[
+                {
+                    "type":"table",
+                    "id":"YRD.LoanTerms.Term.Table"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "id": "YRD.InvestorProfile.NumberOfInvestorsServed",
+    "title":"Number of Investors Served",
+    "dateView":15,
+    "dataView":[
+        {
+            "type":"chartView",
+            "figures":[
+                {
+                    "type":"figureBox",
+                    "figures":[
+                        {
+                            "type":"LineChart",
+                            "id":"YRD.InvestorProfile.NumberOfInvestorsServed"
+                        },
+                        {
+                            "type":"kvCard",
+                            "id":"YRD.InvestorProfile.NumberOfInvestorsServed.KV"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

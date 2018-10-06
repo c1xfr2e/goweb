@@ -1,0 +1,45 @@
+{
+    "id": "YRD.BorrowerProfile.PersonasOfBorrowers",
+    "title": "Borrower Characteristics",
+    "dateView": 0,
+    "dataView": [
+        {
+            "type": "chartView",
+            "figures": [
+                {
+                    "type": "figureBox",
+                    "figures": [
+                        {
+                            "type": "PieChart",
+                            "id": "YRD.BorrowerProfile.PersonasOfBorrowers.Apartment"
+                        },
+                        {
+                            "type": "PieChart",
+                            "id": "YRD.BorrowerProfile.PersonasOfBorrowers.City"
+                        },
+                        {
+                            "type": "PieChart",
+                            "id": "YRD.BorrowerProfile.PersonasOfBorrowers.Education"
+                        },
+                        {
+                            "type": "PieChart",
+                            "id": "YRD.BorrowerProfile.PersonasOfBorrowers.Gender"
+                        },
+                        {
+                            "type": "PieChart",
+                            "id": "YRD.BorrowerProfile.PersonasOfBorrowers.Income"
+                        },
+                        {
+                            "type": "PieChart",
+                            "id": "YRD.BorrowerProfile.PersonasOfBorrowers.MaritalStatus"
+                        },
+                        {
+                            "type": "PieChart",
+                            "id": "YRD.BorrowerProfile.PersonasOfBorrowers.Occupation"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

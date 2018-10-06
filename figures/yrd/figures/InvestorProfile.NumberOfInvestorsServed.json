@@ -1,0 +1,15 @@
+{
+  "type": "LineChart",
+  "id": "YRD.InvestorProfile.NumberOfInvestorsServed",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": [
+    "Number of Investors Served"
+  ],
+  "#query": {
+    "type": "select_column",
+    "column": "repeated_investor_num",
+    "table": "YRD.investment",
+    "raise_dimension": 1
+  }
+}

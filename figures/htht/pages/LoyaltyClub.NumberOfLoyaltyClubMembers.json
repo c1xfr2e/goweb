@@ -1,0 +1,35 @@
+{
+    "dataView": [
+        {
+            "figures": [
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.LoyaltyClub.NumberOfLoyaltyClubMembers",
+                            "type": "AreaChart"
+                        },
+                        {
+                            "id": "HTHT.LoyaltyClub.NumberOfLoyaltyClubMembers.KV",
+                            "type": "kvCard"
+                        }
+                    ],
+                    "type": "figureBox"
+                }
+            ],
+            "type": "chartView"
+        },
+        {
+            "figures": [
+                {
+                    "id": "HTHT.LoyaltyClub.NumberOfLoyaltyClubMembers.Table",
+                    "type": "table"
+                }
+            ],
+            "type": "tableView"
+        }
+    ],
+    "dateView": 7,
+    "id": "HTHT.LoyaltyClub.NumberOfLoyaltyClubMembers",
+    "table": "HTHT.member",
+    "title": "Number of Loyalty Club Members"
+}

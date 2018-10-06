@@ -1,0 +1,13 @@
+{
+  "type": "PieChart",
+  "id": "YRD.BorrowerProfile.PersonasOfBorrowerse.Income",
+  "title": "Income",
+  "data": "#query.data",
+  "#query": {
+    "type": "aggregate",
+    "table": "YRD.borrower_income_distribution",
+    "group_key": "item",
+    "function": "sum(value)",
+    "period": "date"
+  }
+}

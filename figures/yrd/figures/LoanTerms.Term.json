@@ -1,0 +1,14 @@
+{
+  "type": "BarChart",
+  "id": "YRD.LoanTerms.Term",
+  "legend": "#query.group_values",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "#query": {
+    "type": "aggregate",
+    "table": "YRD.borrow_term_distribution",
+    "group_key": "item",
+    "function": "sum(value)",
+    "period": "date"
+  }
+}

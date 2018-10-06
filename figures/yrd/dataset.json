@@ -1,0 +1,86 @@
+{
+    "name": "YRD",
+    "FigureSet": [
+        {
+            "title":"Overview",
+            "id":"YRD.Overview"
+        },
+        {
+            "title":"Loan Facilitation",
+            "figurePages":[
+                {
+                    "id":"YRD.LoanFacilitation.TotalLoansFacilitated",
+                    "title":"Total Loans Facilitated"
+                },
+                {
+                    "id":"YRD.LoanFacilitation.NumberOfLoansFacilitated",
+                    "title":"Number of Loans Facilitated"
+                },
+                {
+                    "id":"YRD.LoanFacilitation.AverageLoanSize",
+                    "title":"Average Loan Size"
+                },
+                {
+                    "id":"YRD.LoanFacilitation.LoanSizeDistribution",
+                    "title":"Loan Size Distribution"
+                }
+            ]
+        },
+        {
+            "title":"Loan Terms",
+            "figurePages":[
+                {
+                    "id":"YRD.LoanTerms.Term",
+                    "title":"Number of Loans by Term"
+                }
+            ]
+        },
+        {
+            "title":"Origination and Risk",
+            "figurePages":[
+                {
+                    "id":"YRD.OriginationAndRisk.OriginationTime",
+                    "title":"Origination Time"
+                },
+                {
+                    "id":"YRD.OriginationAndRisk.SuccessRate",
+                    "title":"Success Rate"
+                },
+                {
+                    "id":"YRD.OriginationAndRisk.LockupPeriod",
+                    "title":"Lockup Period"
+                }
+            ]
+        },
+        {
+            "title":"Borrower Profile",
+            "figurePages":[
+                {
+                    "id":"YRD.BorrowerProfile.NumberOfBorrowersServed",
+                    "title":"Number of Borrowers Served"
+                },
+                {
+                    "id":"YRD.BorrowerProfile.PersonasOfBorrowers",
+                    "title":"Borrower Characteristics"
+                }
+            ]
+        },
+        {
+            "title":"Investor Profile (P2P)",
+            "figurePages":[
+                {
+                    "id":"YRD.InvestorProfile.NumberOfInvestorsServed",
+                    "title":"Number of Investors Served"
+                },
+                {
+                    "id":"YRD.InvestorProfile.InvestedByEachInvestor",
+                    "title":"Average Investment per Investor"
+                },
+                {
+                    "id":"YRD.InvestorProfile.InvestmentAmountDistribution",
+                    "title":"Investment Size Distribution"
+                }
+            ]
+        }
+    ]
+}

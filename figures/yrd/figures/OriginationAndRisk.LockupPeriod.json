@@ -1,0 +1,14 @@
+{
+  "id": "YRD.OriginationAndRisk.LockupPeriod",
+  "type": "BarChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "#query": {
+    "type": "aggregate",
+    "table": "YRD.origination_risk_lockup_period_distribution",
+    "period": "date",
+    "function": "sum(value)",
+    "group_key": "item"
+  },
+  "legend": "#query.group_values"
+}

@@ -1,0 +1,42 @@
+{
+  "id":"YRD.LoanFacilitation.NumberOfLoansFacilitated.KV",
+  "template": true,
+  "type":"kvCard",
+  "cards":[
+    {
+      "title": "Average",
+      "content":"{{.A.data | printNumber}}",
+      "type": 0
+    },
+    {
+      "title": "Month-on-Month",
+      "content":"{{.B.change}}%",
+      "type": "{{.B.inc_or_dec}}"
+    },
+    {
+      "title": "Quarter-on-Quarter",
+      "content":"{{.C.change}}%",
+      "type": "{{.C.inc_or_dec}}"
+    }
+  ],
+
+  "#query": {
+    "A": {
+      "type": "element",
+      "table": "YRD.loans",
+      "function": "avg(transaction_num)"
+    },
+    "B": {
+      "type": "xox",
+      "period": "month",
+      "table": "YRD.loans",
+      "function": "sum(transaction_num)"
+    },
+    "C": {
+      "type": "xox",
+      "period": "quarter",
+      "table": "YRD.loans",
+      "function": "sum(transaction_num)"
+    }
+  }
+}

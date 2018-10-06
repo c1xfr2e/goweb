@@ -1,0 +1,34 @@
+{
+  "id": "HTHT.HotelsAndRooms.ChangeInNumberOfRoomsPerHotel",
+  "title": "Change in Number of Rooms",
+  "dateView": 14,
+  "dataView": [
+    {
+      "type": "chartView",
+      "figures": [
+        {
+          "type": "figureBox",
+          "figures": [
+            {
+              "type": "LadderWaterfall",
+              "id": "HTHT.HotelsAndRooms.ChangeInNumberOfRoomsPerHotel.Ladder"
+            },
+            {
+              "type": "kvCard",
+              "id": "HTHT.HotelsAndRooms.ChangeInNumberOfRoomsPerHotel.KV"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tableView",
+      "figures": [
+        {
+          "type": "table",
+          "id": "HTHT.HotelsAndRooms.ChangeInNumberOfRoomsPerHotel.Table"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "YRD.LoanFacilitation.NumberOfLoansFacilitated",
+  "type": "AreaChart",
+  "xAxis": "#query.0.date_range",
+  "yAxis": "#query.0.data",
+  "#query": {
+    "0": {
+      "type": "select_column",
+      "column": "transaction_num",
+      "table": "YRD.loans"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "HTHT.HotelsAndRooms.NumberOfIncreasedHotels",
+  "type": "LineChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": ["Number of Increased Hotels"],
+  "#query": {
+    "type": "select_column",
+    "column": "increase_count",
+    "period": "month",
+    "table": "HTHT.hotel",
+    "raise_dimension": 1
+  }
+}

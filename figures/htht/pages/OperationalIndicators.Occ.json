@@ -1,0 +1,35 @@
+{
+    "dataView": [
+        {
+            "figures": [
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.OperationalIndicators.OccupancyRate",
+                            "type": "LineChart"
+                        },
+                        {
+                            "id": "HTHT.OperationalIndicators.OccupancyRate.KV",
+                            "type": "kvCard"
+                        }
+                    ],
+                    "type": "figureBox"
+                }
+            ],
+            "type": "chartView"
+        },
+        {
+            "figures": [
+                {
+                    "id": "HTHT.OperationalIndicators.OccupancyRate.Table",
+                    "type": "table"
+                }
+            ],
+            "type": "tableView"
+        }
+    ],
+    "dateView": 7,
+    "id": "HTHT.OperationalIndicators.OccupancyRate",
+    "table": "HTHT.hotel_management_state",
+    "title": "Occupancy Rate"
+}

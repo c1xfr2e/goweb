@@ -1,0 +1,42 @@
+{
+  "id":"YRD.LoanFacilitation.AverageLoanSize.KV",
+  "template": true,
+  "type":"kvCard",
+  "cards":[
+    {
+      "title": "Average",
+      "content":"{{.A.data | printNumber}}",
+      "type": 0
+    },
+    {
+      "title": "Day-on-Day",
+      "content":"{{.B.change}}%",
+      "type": "{{.B.inc_or_dec}}"
+    },
+    {
+      "title": "Month-on-Month",
+      "content":"{{.C.change}}%",
+      "type": "{{.C.inc_or_dec}}"
+    }
+  ],
+
+  "#query": {
+    "A": {
+      "type": "element",
+      "table": "YRD.loans",
+      "function": "avg(total_borrow_amount/borrower_num)"
+    },
+    "B": {
+      "type": "xox",
+      "period": "date",
+      "table": "YRD.loans",
+      "function": "sum(average_borrow_amount)"
+    },
+    "C": {
+      "type": "xox",
+      "period": "month",
+      "table": "YRD.loans",
+      "function": "sum(average_borrow_amount)"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+	"id": "YRD.LoanFacilitation.NumberOfLoansFacilitated",
+	"title": "Number of Loans Facilitated",
+	"dateView": 15,
+	"dataView": [
+		{
+			"type": "chartView",
+			"figures": [
+				{
+					"type": "figureBox",
+					"figures": [
+						{
+							"type": "AreaChart",
+							"id": "YRD.LoanFacilitation.NumberOfLoansFacilitated"
+						},
+						{
+							"type": "kvCard",
+							"id": "YRD.LoanFacilitation.NumberOfLoansFacilitated.KV"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "tableView",
+			"figures": [
+				{
+					"type": "table",
+					"id": "YRD.LoanFacilitation.Table"
+				}
+			]
+		}
+	]
+}

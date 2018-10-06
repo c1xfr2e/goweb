@@ -1,0 +1,15 @@
+{
+  "id": "YRD.LoanFacilitation.AverageLoanSize",
+  "type": "LineChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "#query": {
+    "type": "select_column",
+    "table": "YRD.loans",
+    "column": "average_borrow_amount",
+    "raise_dimension": 1
+  },
+  "legend": [
+    "Average Loan Size"
+  ]
+}

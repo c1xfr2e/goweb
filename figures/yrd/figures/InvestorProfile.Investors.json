@@ -1,0 +1,15 @@
+{
+  "id": "YRD.InvestorProfile.Investors",
+  "type": "BarChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": [
+    "Investors"
+  ],
+  "#query": {
+    "type": "select_column",
+    "column": "investor_num",
+    "table": "YRD.investment",
+    "raise_dimension": 1
+  }
+}

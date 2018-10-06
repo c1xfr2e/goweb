@@ -1,0 +1,61 @@
+{
+    "dataView": [
+        {
+            "figures": [
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.Overview.Hotel.Amount",
+                            "type": "OverviewCard"
+                        }
+                    ],
+                    "title": "Hotel",
+                    "type": "figureGroup"
+                },
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.Overview.Room.Amount",
+                            "type": "OverviewCard"
+                        }
+                    ],
+                    "title": "Room",
+                    "type": "figureGroup"
+                },
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.Overview.OperationalIndicators.AverageDailyRate",
+                            "type": "OverviewCard"
+                        },
+                        {
+                            "id": "HTHT.Overview.OperationalIndicators.OccupancyRate",
+                            "type": "OverviewCard"
+                        },
+                        {
+                            "id": "HTHT.Overview.OperationalIndicators.RevPAR",
+                            "type": "OverviewCard"
+                        }
+                    ],
+                    "title": "Operational Indicators",
+                    "type": "figureGroup"
+                },
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.Overview.Member.NumberOfMember",
+                            "type": "OverviewCard"
+                        }
+                    ],
+                    "title": "Member",
+                    "type": "figureGroup"
+                }
+            ],
+            "type": "chartView"
+        }
+    ],
+    "dateView": 0,
+    "id": "HTHT.Overview",
+    "table": "HTHT.hotel",
+    "title": "Overview"
+}

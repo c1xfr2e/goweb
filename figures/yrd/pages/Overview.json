@@ -1,0 +1,40 @@
+{
+	"id": "YRD.Overview",
+	"title":"Overview",
+	"dateView":0,
+	"dataView":[
+		{
+			"type":"chartView",
+			"figures":[
+				{
+					"type":"figureGroup",
+					"title":"Loan Facilitation",
+					"figures":[
+						{
+							"type":"OverviewCard",
+							"id":"YRD.Overview.NumberOfLoansFacilitated"
+						},
+						{
+							"type":"OverviewCard",
+							"id":"YRD.Overview.LoanFacilitation"
+						},
+						{
+							"type":"OverviewCard",
+							"id":"YRD.Overview.AverageLoanSize"
+						}
+					]
+				},
+				{
+					"type":"figureGroup",
+					"title":"Borrower Profile",
+					"figures":[
+						{
+							"type":"OverviewCard",
+							"id":"YRD.Overview.NumberOfBorrowersServed"
+						}
+					]
+				}
+			]
+		}
+	]
+}

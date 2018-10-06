@@ -1,0 +1,35 @@
+{
+    "dataView": [
+        {
+            "figures": [
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.HotelsAndRooms.NumberOfHotels",
+                            "type": "AreaChart"
+                        },
+                        {
+                            "id": "HTHT.HotelsAndRooms.NumberOfHotels.KV",
+                            "type": "kvCard"
+                        }
+                    ],
+                    "type": "figureBox"
+                }
+            ],
+            "type": "chartView"
+        },
+        {
+            "figures": [
+                {
+                    "id": "HTHT.HotelsAndRooms.NumberOfHotels.Table",
+                    "type": "table"
+                }
+            ],
+            "type": "tableView"
+        }
+    ],
+    "dateView": 6,
+    "id": "HTHT.HotelsAndRooms.NumberOfHotels",
+    "table": "HTHT.hotel",
+    "title": "Number of Hotels"
+}

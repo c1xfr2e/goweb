@@ -1,0 +1,13 @@
+{
+  "id": "HTHT.CustomerReviews.UserRating",
+  "type": "LineChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "legend": ["User Rating"],
+  "#query": {
+    "type": "select_column",
+    "column": "avg_score",
+    "table": "HTHT.member",
+    "raise_dimension": 1
+  }
+}

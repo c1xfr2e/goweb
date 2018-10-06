@@ -1,0 +1,50 @@
+{
+    "dataView": [
+        {
+            "figures": [
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.HotelsAndRooms.NumberOfIncreasedHotels",
+                            "type": "LineChart"
+                        },
+                        {
+                            "id": "HTHT.HotelsAndRooms.NumberOfIncreasedHotels.KV",
+                            "type": "kvCard"
+                        }
+                    ],
+                    "title": "Number of Increased Hotels",
+                    "type": "figureGroup"
+                },
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.HotelsAndRooms.NumberOfDecreasedHotels",
+                            "type": "LineChart"
+                        },
+                        {
+                            "id": "HTHT.HotelsAndRooms.NumberOfDecreasedHotels.KV",
+                            "type": "kvCard"
+                        }
+                    ],
+                    "title": "Number of Decreased Hotels",
+                    "type": "figureGroup"
+                }
+            ],
+            "type": "chartView"
+        },
+        {
+            "figures": [
+                {
+                    "id": "HTHT.HotelsAndRooms.HotelDevelopment.Table",
+                    "type": "table"
+                }
+            ],
+            "type": "tableView"
+        }
+    ],
+    "dateView": 14,
+    "id": "HTHT.HotelsAndRooms.HotelDevelopment",
+    "table": "HTHT.hotel",
+    "title": "Hotel Development"
+}

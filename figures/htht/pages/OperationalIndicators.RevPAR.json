@@ -1,0 +1,35 @@
+{
+    "dataView": [
+        {
+            "figures": [
+                {
+                    "figures": [
+                        {
+                            "id": "HTHT.OperationalIndicators.RevPAR",
+                            "type": "LineChart"
+                        },
+                        {
+                            "id": "HTHT.OperationalIndicators.RevPAR.KV",
+                            "type": "kvCard"
+                        }
+                    ],
+                    "type": "figureBox"
+                }
+            ],
+            "type": "chartView"
+        },
+        {
+            "figures": [
+                {
+                    "id": "HTHT.OperationalIndicators.RevPAR.Table",
+                    "type": "table"
+                }
+            ],
+            "type": "tableView"
+        }
+    ],
+    "dateView": 7,
+    "id": "HTHT.OperationalIndicators.RevPAR",
+    "table": "HTHT.hotel_management_state",
+    "title": "RevPAR"
+}

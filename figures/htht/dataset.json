@@ -1,0 +1,69 @@
+{
+  "name": "HTHT",
+  "FigureSet": [
+    {
+      "title": "Overview",
+      "id": "HTHT.Overview"
+    },
+    {
+      "title": "Hotels and Rooms",
+      "figurePages": [
+        {
+          "id": "HTHT.HotelsAndRooms.NumberOfHotels",
+          "title": "Number of Hotels"
+        },
+        {
+          "id": "HTHT.HotelsAndRooms.HotelDevelopment",
+          "title": "Hotel Development"
+        },
+        {
+          "id": "HTHT.HotelsAndRooms.NumberOfRoomsPerHotel",
+          "title": "Number of Rooms Per Hotel"
+        },
+        {
+          "id": "HTHT.HotelsAndRooms.ChangeInNumberOfRoomsPerHotel",
+          "title": "Change in Number of Rooms"
+        }
+      ]
+    },
+    {
+      "title": "Operational Indicators",
+      "figurePages": [
+        {
+          "id": "HTHT.OperationalIndicators.AverageDailyRate",
+          "title": "Average Daily Rate"
+        },
+        {
+          "id": "HTHT.OperationalIndicators.OccupancyRate",
+          "title": "Occupancy Rate"
+        },
+        {
+          "id": "HTHT.OperationalIndicators.RevPAR",
+          "title": "RevPAR"
+        }
+      ]
+    },
+    {
+      "title": "Customer Reviews",
+      "figurePages": [
+        {
+          "id": "HTHT.CustomerReviews.UserRatingAndNumberOfReviews",
+          "title": "User Rating and Number of Reviews"
+        }
+      ]
+    },
+    {
+      "title": "Loyalty Club",
+      "figurePages": [
+        {
+          "id": "HTHT.LoyaltyClub.NumberOfLoyaltyClubMembers",
+          "title": "Number of Loyalty Club Members"
+        },
+        {
+          "id": "HTHT.LoyaltyClub.MembershipTypeDistribution",
+          "title": "Membership Type Distribution"
+        }
+      ]
+    }
+  ]
+}

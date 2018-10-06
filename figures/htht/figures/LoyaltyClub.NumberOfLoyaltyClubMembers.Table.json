@@ -1,0 +1,10 @@
+{
+  "id": "HTHT.LoyaltyClub.NumberOfLoyaltyClubMembers.Table",
+  "type": "table",
+  "data": {
+    "columns": [],
+    "currentPage": 0,
+    "total": 0
+  },
+  "table": "HTHT.member"
+}

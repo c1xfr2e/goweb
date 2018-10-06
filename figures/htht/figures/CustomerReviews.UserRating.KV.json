@@ -1,0 +1,41 @@
+{
+  "id": "HTHT.CustomerReviews.UserRating.KV",
+  "template": true,
+  "type": "kvCard",
+  "cards": [
+    {
+      "title": "Average",
+      "content": "{{.A.data | printNumber}}",
+      "type": 0
+    },
+    {
+      "title": "Month-on-Month",
+      "content": "{{.B.change}}%",
+      "type": "{{.B.inc_or_dec}}"
+    },
+    {
+      "title": "Quarter-on-Quarter",
+      "content": "{{.C.change}}%",
+      "type": "{{.C.inc_or_dec}}"
+    }
+  ],
+  "#query": {
+    "A": {
+      "type": "element",
+      "table": "HTHT.member",
+      "function": "avg(avg_score)"
+    },
+    "B": {
+      "type": "xox",
+      "period": "month",
+      "table": "HTHT.member",
+      "function": "avg(avg_score)"
+    },
+    "C": {
+      "type": "xox",
+      "period": "quarter",
+      "table": "HTHT.member",
+      "function": "avg(avg_score)"
+    }
+  }
+}

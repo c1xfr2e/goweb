@@ -1,0 +1,50 @@
+{
+  "type": "OverviewCard",
+  "id": "YRD.Overview.AverageLoanSize",
+  "title": "Average Loan Size",
+  "mainView": {
+    "currency": "￥",
+    "unit": "",
+    "content": "#query.1.data"
+  },
+  "figureView": {
+    "type": "#query.2.inc_or_dec",
+    "data": "#query.0.data"
+  },
+  "diffView": {
+    "0": {
+      "name": "#query.2.name",
+      "type": "#query.2.inc_or_dec",
+      "amount": "#query.2.change"
+    },
+    "1": {
+      "name": "#query.3.name",
+      "type": "#query.3.inc_or_dec",
+      "amount": "#query.3.change"
+    }
+  },
+  "#query": {
+    "0": {
+      "type": "select_column",
+      "column": "average_borrow_amount",
+      "table": "YRD.loans"
+    },
+    "1": {
+      "type": "element",
+      "table": "YRD.loans",
+      "function": "sum(average_borrow_amount)",
+      "one": true
+    },
+    "2": {
+      "type": "xox",
+      "table": "YRD.loans",
+      "function": "sum(average_borrow_amount)"
+    },
+    "3": {
+      "type": "xox",
+      "table": "YRD.loans",
+      "function": "sum(average_borrow_amount)",
+      "periodLevel": 1
+    }
+  }
+}

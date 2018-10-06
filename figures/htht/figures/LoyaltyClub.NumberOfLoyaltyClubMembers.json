@@ -1,0 +1,11 @@
+{
+  "id": "HTHT.LoyaltyClub.NumberOfLoyaltyClubMembers",
+  "type": "AreaChart",
+  "xAxis": "#query.date_range",
+  "yAxis": "#query.data",
+  "#query": {
+    "type": "select_column",
+    "column": "max_member_id",
+    "table": "HTHT.member"
+  }
+}

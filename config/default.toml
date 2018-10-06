@@ -1,0 +1,51 @@
+# Default Config for testing.
+
+name = "Lemon-service"
+debug = true
+
+[log]
+level = "info"
+formatter = "json"
+
+[server]
+address = "localhost" # "10.10.10.152"
+port = 1323
+tls_on = false
+tls_cert = "./rsakeys/cert.pem"
+tls_key = "./rsakeys/key.pem"
+cert_cache = "/var/tmp/www/.cache"
+
+[db]
+driver = "postgres"
+dsn = "host=localhost user=zh password=000 dbname=lemon_index_local sslmode=disable"
+
+[redis]
+dsn = "redis://127.0.0.1:6379"
+
+[auth]
+encrypt = true
+privatekey_path = "./rsakeys/private.pem"
+publicKey_path = "./rsakeys/public.pem"
+fingerprints_limit = 5
+
+[develop]
+disable_mns = true
+
+[xiaoshouyi]
+# 销售易系统设置--开发者平台--连接器--Cloud Crawler的客户端信息
+clientid = "10c322d6812810ed97d8bcc54e2bde8d"
+clientsecret = "fcff88b1c7801c02ad08f5f488d99d67"
+redirecturi = "http://zaoshu.io"
+# basic auth
+username = "linhaicheng@zaoshu.io"
+password = "zaoshu11Lfic6HrC"
+#
+createleadurl = "https://api.xiaoshouyi.com/data/v1/objects/lead/create"
+#
+gettokenurl = "https://api.xiaoshouyi.com/oauth2/token"
+expire = 86400
+# 销售易系统设置--线索池设置--线索池分组--测试lemon，目前通过审查元素可以获得该id，或者麻烦点就去看api文档
+highseaid = 337106
+# 销售易系统设置--业务参数设置--销售线索来源--lemon官网，目前通过审查元素可以获得该id，或者麻烦点就去看api文档
+leadsourceid = 7631091
+
